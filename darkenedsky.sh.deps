@@ -1,0 +1,4 @@
+check-for-file.sh /etc/hosts
+diskfree.sh 500
+hour-range.sh 10 21
+lastrun.sh 100

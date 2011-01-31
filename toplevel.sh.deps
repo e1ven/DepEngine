@@ -1,0 +1,3 @@
+check-for-file.sh /etc/hosts
+diskfree.sh 123
+hour-range.sh 20 21

@@ -1,0 +1,5 @@
+This is a small little "Dependency Engine", allow you to schedule jobs to run at any point in the future.
+It will check to see that any pre-reqs of that job are satisfied before firing.
+Files are as follows-
+	filename.sh :: Your script
+	filename.sh.deps :: A list of files that should be run. These can include command line variables.
