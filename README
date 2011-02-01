@@ -1,5 +1,12 @@
 This is a small little "Dependency Engine", allow you to schedule jobs to run at any point in the future.
 It will check to see that any pre-reqs of that job are satisfied before firing.
+
+An example use case might be scheduling a tape backup:
+	You don't want to write the tape until all your Rsync's finish.
+	You don't want any rsync to start until after midnight.
+
+No problem. Assign a dependency of Hour 1-11 on the rsync jobs, and make those a dependency of the tapewrite.
+
 Files are as follows-
 	filename.sh :: Your script
 	filename.sh.deps :: A list of files that should be run. These can include command line variables.
